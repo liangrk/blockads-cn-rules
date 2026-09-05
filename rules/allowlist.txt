@@ -30,3 +30,12 @@ dianping.com
 pinduoduo.com
 netease.com
 126.net
+
+# Functionality domains mis-blocked by upstream (verified on-device 2026-09-05):
+# HTTPDNS resolution service, WeChat login, Kuaishou video CDN,
+# NAT detection, anti-fraud risk control. Blocking them causes timeouts.
+httpdns.bcelive.com
+teg.tencent-cloud.net
+yximgs.com
+onethingpcs.com
+fengkongcloud.com

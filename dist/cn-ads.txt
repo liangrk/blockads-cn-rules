@@ -11062,8 +11062,6 @@ alhblrwz.com
 alhi.actonservice.com
 alhiop.thehandsome.com
 alhkanbodrbve.online
-ali-ad.a.yximgs.com
-ali-p2p-v2.pull.yximgs.com
 ali-pro-origin-pull.kwai.net.iberostar.com
 ali-pro-pull.kwai.net.iberostar.com
 ali-stats.jpush.cn
@@ -12578,9 +12576,6 @@ apcerpharma.actonservice.com
 apcinfo.motorolasolutions.com
 apcinfo.vertexstandard.com
 apcognesykiyw.website
-apd-pcdnwxlogin.teg.tencent-cloud.net
-apd-pcdnwxnat.teg.tencent-cloud.net
-apd-pcdnwxstat.teg.tencent-cloud.net
 apdcpfgctvewj.space
 ape-tagit.timeinc.net
 ape78cn2.com
@@ -36962,7 +36957,6 @@ fozhu.rrsdl.com
 foztcbbfdnnla.space
 fp-cdn.azureedge.net
 fp-flame.vercel.app
-fp-it.fengkongcloud.com
 fp-upload.dun.163.com
 fp.bizjournals.com
 fp.kakaku.com
@@ -43298,7 +43292,6 @@ htqaumcmsqrtl.com
 htqfxh.vuch.cz
 htrace.wetvinfo.com
 httaybjfiob.com
-httpdns.bcelive.com
 httpdns.browser.miui.com
 httpdns.c.cdnhwc2.com
 httpdns.music.163.com
@@ -43533,9 +43526,7 @@ hvwgbj.wikinger-reisen.de
 hvwoeavjjemhq.site
 hvwsecjtqnbkv.online
 hvxymx.tui.pl
-hw-ot-ad.a.yximgs.com
 hw-p2p-pull.video-voip.com
-hw-p2p.pull.yximgs.com
 hwad.zuimeitianqi.com
 hwads-t.api.my7v.com
 hwbtcfhzfktvo.space
@@ -49012,7 +49003,6 @@ jrzgcz.latinaoggi.eu
 jrzrqi0au.com
 jrzwrjgxhzotx.site
 js-1.pchome.net
-js-ad.a.yximgs.com
 js-agent.newrelic.com
 js-apac-ss.ysm.yahoo.com
 js-check.com
@@ -50760,10 +50750,7 @@ krxwwojyad.com
 kryvidmqdmlnm.space
 krzkasckoqvad.site
 krzsueygruwdl.online
-ks-p2p-v2.pull.yximgs.com
-ks-p2p.pull.yximgs.com
 ks.ferlytc.com
-ks.pull.yximgs.com
 ksamarketing.sedgwick.com
 ksawhxjeeunbn.com
 ksbxthpfiyrrg.online
@@ -62878,7 +62865,6 @@ nasutearawa.com
 naszig.cn
 nataldecayed.shop
 nataliacressed.shop
-natdetection.onethingpcs.com
 natdisplacehereafter.com
 natero.com
 nathetsof.com
@@ -68169,7 +68155,6 @@ pccipieces.actonservice.com
 pccxfiekp.com
 pcd.autohome.com.cn
 pcdn.xmcdn.com
-pcdn.yximgs.com
 pcdstm.petbarn.com.au
 pcdwm.com
 pcexhftbidjqk.site
@@ -86408,7 +86393,6 @@ static.doublemax.net
 static.duoshuo.com
 static.estebull.com
 static.exoclick.com
-static.fengkongcloud.com
 static.flv.uuzuonline.com
 static.front.xywy.com
 static.g.iqiyi.com
@@ -91762,7 +91746,6 @@ toastibar-cdn.makeprosimp.com
 toastparasolcrush.com
 toasttutor.com
 tob-cms.bj.bcebos.com
-tob-tracker.yximgs.com
 tobaltoyon.com
 tobapplog.ctobsnssdk.com
 tobecation.github.io
@@ -95904,11 +95887,8 @@ twvsdn.icu
 twwarolhgextk.online
 twznryfmalwge.site
 twzui6.com
-tx-ad.a.yximgs.com
 tx-br-cdn.kwai.net.iberostar.com
-tx-kmpaudio.pull.yximgs.com
 tx-p2p-pull.live-voip.com
-tx-p2p-v2.pull.yximgs.com
 tx-pro-pull.kwai.net.iberostar.com
 tx.lwinl.com
 tx99y.net
@@ -98413,7 +98393,6 @@ v.xinshide.cn
 v.xiuzhenjewelry.cn
 v0su9ogte.com
 v1-ad.ixigua.com
-v1-ad.video.yximgs.com
 v1-dc-ad.ixigua.com
 v1-feed.idreamsky.com
 v1-lm.adukwai.com
@@ -98439,7 +98418,6 @@ v13.cnzz.com
 v14.cnzz.com
 v16.56.com
 v16m-default.akamaized.net.iberostar.com
-v2-ad.video.yximgs.com
 v2-api-channel-launcher.hismarttv.com
 v2-lm.adukwai.com
 v2.cnzz.com
@@ -98455,7 +98433,6 @@ v2006.com
 v2cigs.com
 v2html.atm.youku.com
 v3-ad.ixigua.com
-v3-ad.video.yximgs.com
 v3-dc-ad.ixigua.com
 v3.cnzz.com
 v3.jiathis.com
