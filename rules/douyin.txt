@@ -1,3 +1,12 @@
 # Douyin / ByteDance ad-only subdomains. NEVER list core business domains (douyin.com, snssdk.com, zjcdn.com) - in-feed ads share them with normal content.
 # Format: one domain per line (plain, or "0.0.0.0 domain").
 # Populate only from packet captures or verified ad-only subdomains.
+
+# 2026-09-06 on-device log analysis (Honor Magic 7 Pro, douyin feed):
+# Ocean Engine lead-ads endpoint, Starry influencer-ad CDN, random-subdomain
+# attribution tracker, ad-lead SCM frontend, analytics endpoint.
+oceanengine.com
+starrydyn.com
+ctydoh.cn
+lf-leads-fe-scm.bytecdn.com
+lf3-analytics.bytescm.com
