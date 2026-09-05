@@ -1,0 +1,3 @@
+# Amap (高德地图) splash/ad domains. Core: amap.com, autonavi.com (allowlisted).
+# Format: one domain per line (plain, or "0.0.0.0 domain").
+# Populate only from packet captures or verified ad-only subdomains.

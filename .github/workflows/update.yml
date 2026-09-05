@@ -1,0 +1,39 @@
+name: update-rules
+
+on:
+  schedule:
+    - cron: "0 16 * * *"   # daily 00:00 Beijing time
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Fetch upstreams
+        run: python scripts/fetch_upstream.py
+
+      - name: Merge & enforce allowlist
+        run: python scripts/merge.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "blockads-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add dist/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "rules: daily upstream merge $(date -u +%F)"
+            git push
+          fi

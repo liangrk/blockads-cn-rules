@@ -1,0 +1,32 @@
+# Core business domains that must NEVER be blocked, even if an upstream
+# list includes them. Merge script strips them (and all subdomains) from
+# the final artifact. The app loads this file into its whitelist channel
+# as a second layer of protection.
+douyin.com
+snssdk.com
+zjcdn.com
+kuaishou.com
+jd.com
+360buyimg.com
+zhihu.com
+zhimg.com
+amap.com
+autonavi.com
+gaode.com
+qq.com
+weixin.qq.com
+weixin.com
+bilibili.com
+hdslb.com
+baidu.com
+bdstatic.com
+bdimg.com
+taobao.com
+tmall.com
+alipay.com
+aliyun.com
+meituan.com
+dianping.com
+pinduoduo.com
+netease.com
+126.net

@@ -1,0 +1,6 @@
+# Upstream ad-domain sources merged daily. Only sources that are
+# ads-only (no core app/business domains) are allowed here.
+upstreams:
+  - name: anti-AD
+    url: https://anti-ad.net/domains.txt
+    format: domains   # one plain domain per line
