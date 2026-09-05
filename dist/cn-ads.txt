@@ -8203,7 +8203,6 @@ ad.propellerads.com
 ad.qingting.fm
 ad.qn.img-space.com
 ad.quwin.cn
-ad.qznovelvod.com
 ad.rednet.cn
 ad.rejichoice.jp
 ad.richmob.cn
@@ -98450,6 +98449,7 @@ v4.cnzz.com
 v46uj91gh.com
 v4dwkcv.com
 v4ox630nia.com
+v5-ex-reading-ad.qznovelvod.com
 v5.cnzz.com
 v5.juzi.cn
 v53groc9v.com

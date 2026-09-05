@@ -1,3 +1,5 @@
-# Hongguo (Tomato novel/short-drama) ad delivery CDN. Only the "ad"
-# suffix group is blocked; mainline video CDNs stay untouched.
-ad.qznovelvod.com
+# Hongguo (Tomato novel/short-drama) ad delivery CDN.
+# NOTE: cannot use ad.qznovelvod.com as a rule - in the observed hosts
+# (v5-ex-reading-ad) "reading-ad" is a single label, so suffix match
+# never hits. Enumerate exact ad hosts instead; video CDNs stay clean.
+v5-ex-reading-ad.qznovelvod.com
