@@ -1,0 +1,21 @@
+# Bilibili (tv.danmaku.bili) ad-chain hosts, DNS-safe only.
+# NOTE: the splash ad itself is served from app.bilibili.com/x/v2/splash/*
+# (same host as business API) with creatives on i0.hdslb.com (content CDN):
+# NOT blockable at DNS level. MITM path rules are required for the splash
+# itself. These hosts cut the ad/tracking chain around it.
+# Sources: AdGuard MobileFilter/SpywareFilter, zirawell/R-Store,
+# Moli-X, NobyDa, blackmatrix7 (multi-source cross-checked 2026-09-06).
+ad.bilibili.com
+adcommon.bilibili.com
+cm.game.bilibili.com
+track.biligame.bilibili.com
+httpdns.bilivideo.com
+tracker.biliapi.net
+# Experimental: ads-platform host, present on the field splash chain
+# (2026-09-06). Multi-source blocklists include it, but anti-AD removed
+# it after a WEB false positive (issue #196, homepage images). App-only
+# DNS scenario should be safe; roll back if in-app pages misbehave.
+cm.bilibili.com
+# Field-observed on the 2026-09-06 splash ad chain (this device):
+impression.biligame.com
+adtrack.qianwen.com
