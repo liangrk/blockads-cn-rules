@@ -3,3 +3,5 @@
 # (v5-ex-reading-ad) "reading-ad" is a single label, so suffix match
 # never hits. Enumerate exact ad hosts instead; video CDNs stay clean.
 v5-ex-reading-ad.qznovelvod.com
+# Variant hosts rotate version prefixes (v5-, v26-, ...); enumerate as seen.
+v26-reading-ad.qznovelvod.com
