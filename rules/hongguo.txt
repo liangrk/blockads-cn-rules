@@ -5,3 +5,8 @@
 v5-ex-reading-ad.qznovelvod.com
 # Variant hosts rotate version prefixes (v5-, v26-, ...); enumerate as seen.
 v26-reading-ad.qznovelvod.com
+
+# Label-tail glob (requires engine >= 2026-09-06): matches any version
+# prefix (v5-, v26-, ...) ending in the "-ad" label. Old engines treat
+# this line as an inert literal - the exact hosts above stay for them.
+*-ad.qznovelvod.com

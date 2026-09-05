@@ -1,3 +1,7 @@
 # Ad measurement / attribution trackers seen in CN apps.
 miaozhen.com
 appsflyersdk.com
+# RTBAsia measurement (parent blocked: ad-tech only, no content use)
+*.datahubtrack.com
+# Zuoyou App statistics host (parent izuiyou.com is mixed - subdomain only)
+stat.izuiyou.com

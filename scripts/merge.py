@@ -8,6 +8,9 @@ import re
 import sys
 
 DOMAIN_RE = re.compile(r"^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,}$")
+# Glob rules: '*' leads the leftmost label ("*-ad.example.com",
+# "*.example.com"). Same validation contract as the Go compiler.
+GLOB_DOMAIN_RE = re.compile(r"^\*[a-z0-9_-]*(?:\.[a-z0-9][a-z0-9-]*){2,}$")
 
 
 def extract_domain(line):
@@ -19,6 +22,8 @@ def extract_domain(line):
     line = line.split("#")[0].strip()
     if not line:
         return None
+    if GLOB_DOMAIN_RE.match(line):
+        return line
     return line if DOMAIN_RE.match(line) else None
 
 
@@ -65,19 +70,16 @@ def main():
     stripped = {d for d in blocked if protected(d) and d not in hand}
     final = sorted(d for d in blocked if not protected(d) or d in hand)
 
-    # Predictive variant expansion: hongguo's ad CDN rotates version prefixes
-    # (v5-, v26-, ...) to dodge exact-host enumeration. Hosts with an explicit
-    # "-ad" label are ad-only by construction, so expand common prefixes.
-    VARIANT_PREFIXES = ["v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9",
-                        "v26", "v66", "v88", "pro", "new", "beta"]
-    variants = set()
-    for d in list(final):
-        m = re.match(r"^(v\d+)?(.*-ad)\.qznovelvod\.com$", d)
-        if m:
-            stem = m.group(2)  # e.g. "-ex-reading-ad" or "-reading-ad"
-            for p in VARIANT_PREFIXES:
-                variants.add(f"{p}{stem}.qznovelvod.com")
-    final = sorted(set(final) | variants)
+    # Glob rules (e.g. *-ad.qznovelvod.com) defeat version-prefix rotation.
+    # Guard: a glob's base domain must never be allowlisted — compiling it
+    # anyway would risk blocking content on a protected parent.
+    for d in final:
+        if d.startswith("*"):
+            base = d.split(".", 1)[1]
+            if protected(base):
+                print(f"FATAL: glob rule {d} base {base} is allowlisted",
+                      file=sys.stderr)
+                return 1
 
     (dist_dir / "cn-ads.txt").write_text(
         "# blockads-cn-rules - merged CN ad domains (ads only).\n"
