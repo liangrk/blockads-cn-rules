@@ -45,20 +45,25 @@ def main():
         print("FATAL: rules/allowlist.txt empty or missing", file=sys.stderr)
         return 1
 
-    blocked = set()
+    hand = set()
     for f in sorted(rules_dir.glob("*.txt")):
         if f.name == "allowlist.txt":
             continue
-        blocked |= load(f)
+        hand |= load(f)
 
+    upstream = set()
     for f in sorted(cache_dir.glob("*.txt")):
-        blocked |= load(f)
+        upstream |= load(f)
+
+    blocked = hand | upstream
 
     def protected(domain):
         return any(domain == a or domain.endswith("." + a) for a in allow)
 
-    stripped = {d for d in blocked if protected(d)}
-    final = sorted(d for d in blocked if not protected(d))
+    # Hand-curated vendor rules survive allowlist suffix protection:
+    # they are verified ad-only domains (e.g. gdt.qq.com under qq.com).
+    stripped = {d for d in blocked if protected(d) and d not in hand}
+    final = sorted(d for d in blocked if not protected(d) or d in hand)
 
     (dist_dir / "cn-ads.txt").write_text(
         "# blockads-cn-rules - merged CN ad domains (ads only).\n"
