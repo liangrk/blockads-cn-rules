@@ -8203,6 +8203,7 @@ ad.propellerads.com
 ad.qingting.fm
 ad.qn.img-space.com
 ad.quwin.cn
+ad.qznovelvod.com
 ad.rednet.cn
 ad.rejichoice.jp
 ad.richmob.cn
@@ -15017,6 +15018,7 @@ awaitingcoordinatelassitude.com
 awake-stats.jpush.cn
 awakecedesurplus.com
 awakeexterior.com
+awaken.amap.com
 awap.equifax.com
 awaps.yandex.net
 awaps.yandex.ru
@@ -40674,7 +40676,6 @@ grqdkqvxbburi.site
 grqrkjxpltwso.site
 grrebjfkmoddeh.com
 grrergiol.com
-grs.dbankcloud.com
 grs.hicloud.com
 grsm.io
 grtexch.com

@@ -1,0 +1,3 @@
+# Ad measurement / attribution trackers seen in CN apps.
+miaozhen.com
+appsflyersdk.com

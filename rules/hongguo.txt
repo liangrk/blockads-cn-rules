@@ -1,0 +1,3 @@
+# Hongguo (Tomato novel/short-drama) ad delivery CDN. Only the "ad"
+# suffix group is blocked; mainline video CDNs stay untouched.
+ad.qznovelvod.com

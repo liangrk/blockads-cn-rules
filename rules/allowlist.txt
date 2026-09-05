@@ -39,3 +39,8 @@ teg.tencent-cloud.net
 yximgs.com
 onethingpcs.com
 fengkongcloud.com
+
+# Huawei/Honor cloud GRS (global route service). Blocking it breaks
+# Huawei/Honor device cloud connectivity (seen blocked on-device 2026-09-06).
+grs.dbankcloud.com
+grs.dbankcloud.cn
