@@ -10,3 +10,6 @@ starrydyn.com
 ctydoh.cn
 lf-leads-fe-scm.bytecdn.com
 lf3-analytics.bytescm.com
+# Douyin client telemetry endpoints (amemv log hosts, 2026-09-06).
+rtlog3-applog-lf.amemv.com
+log0-misc-lf.amemv.com
