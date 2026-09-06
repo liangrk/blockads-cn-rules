@@ -14366,7 +14366,6 @@ as.rollingstone.de
 as.stylebook.de
 as.techbook.de
 as.travelbook.de
-as.weixin.qq.com
 as.welt.de
 as.wieistmeineip.de
 as.yomonda.de

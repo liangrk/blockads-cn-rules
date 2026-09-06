@@ -7,4 +7,3 @@
 gdt.qq.com
 
 # WeChat in-app ad serving (under weixin.qq.com umbrella -> '!' exception)
-as.weixin.qq.com
