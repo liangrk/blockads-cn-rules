@@ -1,0 +1,20 @@
+# ── Ad material CDNs & CNAME alias domains (CN) ──────────────────────
+# Discovered via on-device probes 2026-09-06: ad SDKs resolve their API
+# domains through CNAME chains to rotating alias domains to evade DNS
+# blocking. These are pure-ad domains, safe to block wholesale.
+
+# YouLianghui (优量汇) affiliate network API
+funlinkads.com
+
+# Kuaishou ad-network CNAME alias (open.e.kuaishou.com -> *.wangjumeng.xin)
+wangjumeng.xin
+
+# ByteDance/Pangle CNAME aliases (log.snssdk.com -> *.queniuyk.com,
+# pangolin.snssdk.com -> *.queniukw.com)
+queniukw.com
+queniuyk.com
+
+# Ad-only material CDNs
+kscdn.com
+kwimgs.com
+toutiaoimg.com

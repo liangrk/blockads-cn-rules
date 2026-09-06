@@ -3,22 +3,27 @@
 # the final artifact. The app loads this file into its whitelist channel
 # as a second layer of protection.
 douyin.com
-snssdk.com
 zjcdn.com
-kuaishou.com
-jd.com
 360buyimg.com
 zhihu.com
 zhimg.com
-amap.com
 autonavi.com
 gaode.com
+# snssdk.com umbrella removed 2026-09-06 (pangolin Pangle ad API); keep
+# open platform for share/login.
+open.snssdk.com
+# kuaishou.com umbrella removed (e.kuaishou commercialization APIs).
+# jd.com umbrella removed (JD Union ad network); keep core API+support.
+mapi.m.jd.com
+chat1.jd.com
+# amap.com umbrella removed (Amap ad/logs); keep config API.
+amap-aos-info-nogw.amap.com
 # qq.com umbrella removed 2026-09-06: it shadowed 67 ad rules at runtime
 # (sdk.e.qq.com / *.gdt.qq.com / wxsnsad / tmfsdk...). WeChat keeps its own
 # dedicated entries (weixin.qq.com / weixin.com).
 weixin.qq.com
 weixin.com
-bilibili.com
+# bilibili.com umbrella removed (ad./cm. commercial domains).
 hdslb.com
 # Baidu: suffix umbrella removed 2026-09-06 — it whitelisted the entire
 # Baidu ad stack (pos/cpro/mobads/hmma.baidu.com, ~200 upstream rules) and
@@ -35,15 +40,17 @@ anquan.baidu.com
 itsdata.map.baidu.com
 bdstatic.com
 bdimg.com
-taobao.com
+# taobao.com umbrella removed (Alibaba adash/UMeng ad+telemetry stack);
+# keep item-detail domain.
+detail.taobao.com
 tmall.com
 alipay.com
 aliyun.com
 meituan.com
 dianping.com
-pinduoduo.com
+# pinduoduo.com umbrella removed (t-dsp DSP).
+# 126.net umbrella removed (NetEase Cloud Music ad domains).
 netease.com
-126.net
 
 # Functionality domains mis-blocked by upstream (verified on-device 2026-09-05):
 # HTTPDNS resolution service, WeChat login, Kuaishou video CDN,

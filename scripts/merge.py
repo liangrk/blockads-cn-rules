@@ -70,6 +70,11 @@ def main():
     # they are verified ad-only domains (e.g. gdt.qq.com under qq.com).
     stripped = {d for d in blocked if protected(d) and d not in hand}
     final = sorted(d for d in blocked if not protected(d) or d in hand)
+    # Hand-picked rules that sit under an allowlist umbrella would be
+    # silently unblocked at runtime (the whitelist channel is checked
+    # before the trie). Emit them as "!" exception lines so the app's
+    # whitelist loader force-blocks them despite the umbrella.
+    conflicts = sorted(d for d in final if protected(d))
 
     # Glob rules (e.g. *-ad.qznovelvod.com) defeat version-prefix rotation.
     # Guard: a glob's base domain must never be allowlisted — compiling it
@@ -91,8 +96,9 @@ def main():
     (dist_dir / "cn-ads.version").write_text(
         f"{int(time.time())}\n", encoding="utf-8"
     )
+    allow_out = sorted(allow) + ["!" + d for d in conflicts]
     (dist_dir / "cn-ads.allowlist.txt").write_text(
-        "\n".join(sorted(allow)) + "\n", encoding="utf-8"
+        "\n".join(allow_out) + "\n", encoding="utf-8"
     )
     print(f"dist/cn-ads.txt: {len(final)} domains; allowlist: {len(allow)}")
     if stripped:
