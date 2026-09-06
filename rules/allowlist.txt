@@ -13,7 +13,9 @@ zhimg.com
 amap.com
 autonavi.com
 gaode.com
-qq.com
+# qq.com umbrella removed 2026-09-06: it shadowed 67 ad rules at runtime
+# (sdk.e.qq.com / *.gdt.qq.com / wxsnsad / tmfsdk...). WeChat keeps its own
+# dedicated entries (weixin.qq.com / weixin.com).
 weixin.qq.com
 weixin.com
 bilibili.com
