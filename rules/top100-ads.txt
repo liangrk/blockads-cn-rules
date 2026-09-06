@@ -112,11 +112,6 @@ cfg.imtt.qq.com
 ad.browser.qq.com
 wxsnsad.tc.qq.com
 wxsnsdy.tc.qq.com
-wxsnsdy.wxs.qq.com
-wxsnsdythumb.wxs.qq.com
-wxa.wxs.qq.com
-wximg.wxs.qq.com
-wxsmw.wxs.qq.com
 wxaintpcos.wxqcloud.qq.com.cn
 tmfmazu.m.qq.com
 tmfmazu-wangka.m.qq.com

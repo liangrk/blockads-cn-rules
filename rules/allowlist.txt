@@ -47,7 +47,6 @@ alipay.com
 aliyun.com
 # pinduoduo.com umbrella removed (t-dsp DSP).
 # 126.net umbrella removed (NetEase Cloud Music ad domains).
-
 # Functionality domains mis-blocked by upstream (verified on-device 2026-09-05):
 # HTTPDNS resolution service, WeChat login, Kuaishou video CDN,
 # NAT detection, anti-fraud risk control. Blocking them causes timeouts.
@@ -56,7 +55,6 @@ teg.tencent-cloud.net
 yximgs.com
 onethingpcs.com
 fengkongcloud.com
-
 # Huawei/Honor cloud infrastructure (removed 2026-09-06 at user request:
 # no splash-ad benefit today, while blocking these broke HMS connectivity
 # on a Honor Power 2 — "network unavailable" + app stalls). Umbrella
@@ -69,3 +67,13 @@ dbankcdn.com
 hihonorcloud.com
 honor.com
 myhuaweicloud.com
+# WeChat mini-program infrastructure (wxs.qq.com is NOT covered by the
+# weixin.qq.com umbrella - exposed by the qq.com umbrella split).
+wxs.qq.com
+# WeChat HTTPDNS fallback (misclassified by anti-AD; blocking it breaks
+# WeChat reconnection - observed on device 2026-09-06).
+dns.weixin.qq.com.cn
+# Tencent BadJS frontend error reporting used by WeChat webviews.
+badjs.weixinbridge.com
+# Generic Ali CDN asset path used by WeChat H5 content.
+ilce.alicdn.com
