@@ -46,8 +46,6 @@ detail.taobao.com
 tmall.com
 alipay.com
 aliyun.com
-meituan.com
-dianping.com
 # pinduoduo.com umbrella removed (t-dsp DSP).
 # 126.net umbrella removed (NetEase Cloud Music ad domains).
 netease.com
