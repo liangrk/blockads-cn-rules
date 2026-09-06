@@ -6,6 +6,7 @@ Output: dist/cn-ads.txt (domains, sorted) + dist/cn-ads.allowlist.txt.
 import pathlib
 import re
 import sys
+import time
 
 DOMAIN_RE = re.compile(r"^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,}$")
 # Glob rules: '*' leads the leftmost label ("*-ad.example.com",
@@ -86,6 +87,9 @@ def main():
         "# Core business domains are protected via rules/allowlist.txt.\n"
         + "\n".join(final) + "\n",
         encoding="utf-8",
+    )
+    (dist_dir / "cn-ads.version").write_text(
+        f"{int(time.time())}\n", encoding="utf-8"
     )
     (dist_dir / "cn-ads.allowlist.txt").write_text(
         "\n".join(sorted(allow)) + "\n", encoding="utf-8"

@@ -18,7 +18,19 @@ weixin.qq.com
 weixin.com
 bilibili.com
 hdslb.com
-baidu.com
+# Baidu: suffix umbrella removed 2026-09-06 — it whitelisted the entire
+# Baidu ad stack (pos/cpro/mobads/hmma.baidu.com, ~200 upstream rules) and
+# let Xiaodu splash ads through. Replaced with precise business domains
+# that upstream actually blocks but are genuine services.
+m.baidu.com
+m1.baidu.com
+msite.baidu.com
+s.baidu.com
+as.baidu.com
+g.baidu.com
+share.baidu.com
+anquan.baidu.com
+itsdata.map.baidu.com
 bdstatic.com
 bdimg.com
 taobao.com
@@ -40,7 +52,15 @@ yximgs.com
 onethingpcs.com
 fengkongcloud.com
 
-# Huawei/Honor cloud GRS (global route service). Blocking it breaks
-# Huawei/Honor device cloud connectivity (seen blocked on-device 2026-09-06).
-grs.dbankcloud.com
-grs.dbankcloud.cn
+# Huawei/Honor cloud infrastructure (removed 2026-09-06 at user request:
+# no splash-ad benefit today, while blocking these broke HMS connectivity
+# on a Honor Power 2 — "network unavailable" + app stalls). Umbrella
+# entries so future upstream subdomains are covered too.
+hicloud.com
+dbankcloud.cn
+dbankcloud.com
+dbankcloud.ru
+dbankcdn.com
+hihonorcloud.com
+honor.com
+myhuaweicloud.com

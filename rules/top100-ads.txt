@@ -520,8 +520,7 @@ adsdk.vivo.com.cn
 adxlog-adnet.vivo.com.cn
 ads-marketing-vivofs.vivo.com.cn
 
-# ===== B15. Huawei (华为, 海外为主的广告通道; drcn=海外) =====
-adx-dre.op.hicloud.com
+# ===== B15. Huawei (removed 2026-09-06: HMS infra, allowlisted per user) =====
 
 # ===== B16. Browsers: UC / Quark / Shenma / QQ / Sogou / 360 =====
 ads.uc.cn
