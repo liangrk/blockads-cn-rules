@@ -5,3 +5,8 @@ appsflyersdk.com
 *.datahubtrack.com
 # Zuoyou App statistics host (parent izuiyou.com is mixed - subdomain only)
 stat.izuiyou.com
+
+# Umbrella-buried telemetry (aliyun/yximgs) -> '!' exceptions
+acjs.aliyun.com
+oa-panther.data.aliyun.com
+tob-tracker.yximgs.com

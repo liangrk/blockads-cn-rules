@@ -5,3 +5,6 @@
 # Verified unblocked on device 2026-09-05 (v3/c3/v2mi.gdt.qq.com resolved normally).
 # gdt.qq.com suffix-match covers all subdomains; purely an ad SDK domain.
 gdt.qq.com
+
+# WeChat in-app ad serving (under weixin.qq.com umbrella -> '!' exception)
+as.weixin.qq.com

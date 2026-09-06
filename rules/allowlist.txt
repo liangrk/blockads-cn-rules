@@ -5,7 +5,6 @@
 douyin.com
 zjcdn.com
 360buyimg.com
-zhihu.com
 zhimg.com
 autonavi.com
 gaode.com
@@ -48,7 +47,6 @@ alipay.com
 aliyun.com
 # pinduoduo.com umbrella removed (t-dsp DSP).
 # 126.net umbrella removed (NetEase Cloud Music ad domains).
-netease.com
 
 # Functionality domains mis-blocked by upstream (verified on-device 2026-09-05):
 # HTTPDNS resolution service, WeChat login, Kuaishou video CDN,
