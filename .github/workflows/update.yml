@@ -36,4 +36,32 @@ jobs:
           else
             git commit -m "rules: daily upstream merge $(date -u +%F)"
             git push
+            # Purge jsDelivr CDN cache so CN clients see the new dist
+            # immediately instead of waiting out the ~12h branch cache.
+            for f in cn-ads.txt cn-ads.allowlist.txt cn-ads.version; do
+              curl -s "https://purge.jsdelivr.net/gh/liangrk/blockads-cn-rules@main/dist/$f" || true
+            done
           fi
+
+      - name: Publish dist to npm (npmmirror syncs from it)
+        if: ${{ env.HAS_CHANGES == 'true' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [ -z "$NODE_AUTH_TOKEN" ]; then
+            echo "NPM_TOKEN secret not set; skipping npm publish"
+            exit 0
+          fi
+          # Auto-bump patch version against the registry
+          CUR=$(npm view blockads-cn-rules version 2>/dev/null || echo 0.0.0)
+          NEW=$(python3 -c "import sys;m,r=map(int,'$CUR'.split('.')[:2]);p=int('$CUR'.split('.')[2])+1;print(f'{m}.{r}.{p}')")
+          python3 - <<PYEOF
+          import json
+          j = json.load(open('package.json'))
+          j['version'] = "$NEW"
+          json.dump(j, open('package.json', 'w'), indent=2)
+          PYEOF
+          echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
+          npm publish
+          # Trigger npmmirror CN-side sync immediately (don't wait for cron)
+          curl -s -X PUT "https://registry-direct.npmmirror.com/blockads-cn-rules/sync?sync_upstream=true" || true
