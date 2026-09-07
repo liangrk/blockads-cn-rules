@@ -1,0 +1,16 @@
+{
+  "name": "blockads-cn-rules",
+  "version": "1.0.0",
+  "description": "BlockAds CN ad-blocking domain rules (dist/ artifacts: cn-ads.txt, allowlist, version marker)",
+  "license": "GPL-3.0",
+  "repository": "github:liangrk/blockads-cn-rules",
+  "files": [
+    "dist/cn-ads.txt",
+    "dist/cn-ads.allowlist.txt",
+    "dist/cn-ads.version"
+  ],
+  "main": "dist/cn-ads.version",
+  "publishConfig": {
+    "public": true
+  }
+}

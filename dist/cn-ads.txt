@@ -13840,7 +13840,6 @@ appc.baidu.com
 appcast.io
 appcdn.wapx.cn
 appcdn.wapx.com
-appcfg.v.qq.com
 appchannel.html5.qq.com
 appcloud.appyreward.com
 appcloud2.in.zhihu.com

@@ -372,7 +372,6 @@ datacollection.uve.weibo.com
 sdkapp.uve.weibo.com
 
 # ===== B6. Tencent Video (腾讯视频广告投放) =====
-appcfg.v.qq.com
 commdata.v.qq.com
 report.tv.kohesport.qq.com
 sdkconfig.video.qq.com

@@ -77,3 +77,5 @@ dns.weixin.qq.com.cn
 badjs.weixinbridge.com
 # Generic Ali CDN asset path used by WeChat H5 content.
 ilce.alicdn.com
+appcfg.v.qq.com
+analytics.map.qq.com
