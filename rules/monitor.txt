@@ -10,3 +10,6 @@ stat.izuiyou.com
 acjs.aliyun.com
 oa-panther.data.aliyun.com
 tob-tracker.yximgs.com
+
+# OpenInstall attribution/stats (seen in Today Watermark Camera)
+stat2.openinstall.com

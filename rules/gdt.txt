@@ -7,3 +7,9 @@
 gdt.qq.com
 
 # WeChat in-app ad serving (under weixin.qq.com umbrella -> '!' exception)
+
+# Today Watermark Camera (xhey.top) ad endpoint - device-log verified 2026-09-08
+ad.xhey.top
+# CAD viewer (jinshanju) home-banner ad endpoints - device-log verified 2026-09-08
+hmads.jinshanju.com
+hmadt.jinshanju.com
