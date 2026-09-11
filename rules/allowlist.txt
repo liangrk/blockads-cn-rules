@@ -79,3 +79,6 @@ badjs.weixinbridge.com
 ilce.alicdn.com
 appcfg.v.qq.com
 analytics.map.qq.com
+
+# Tencent Docs static assets (docs.gtimg.com blocked on device 2026-09-09)
+docs.gtimg.com

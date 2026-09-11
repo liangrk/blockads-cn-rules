@@ -6,7 +6,6 @@
 # Ocean Engine lead-ads endpoint, Starry influencer-ad CDN, random-subdomain
 # attribution tracker, ad-lead SCM frontend, analytics endpoint.
 oceanengine.com
-starrydyn.com
 ctydoh.cn
 lf-leads-fe-scm.bytecdn.com
 lf3-analytics.bytescm.com
@@ -15,10 +14,6 @@ rtlog3-applog-lf.amemv.com
 log0-misc-lf.amemv.com
 # 2026-09-06 additional douyin trackers from Honor field logs.
 # Only concrete subdomains - apex domains are unverified, do not block them.
-sd-gl.comfylink.com
-sdktt.data.comfylink.com
-seeds-open.comfylink.com
 q88wv3ob1c8x6.v1d.pkoplink.com
 qwxfkpgl1kwzl.v1d.pkoplink.com
 cap-rta-toc.wldmarket.com
-douyin.starrydyn.com

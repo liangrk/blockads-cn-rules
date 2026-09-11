@@ -17,6 +17,7 @@ dbankcloud.com
 dbankcloud.ru
 detail.taobao.com
 dns.weixin.qq.com.cn
+docs.gtimg.com
 douyin.com
 fengkongcloud.com
 g.baidu.com
